@@ -2,7 +2,7 @@ from Bio import Entrez
 import pandas as pd
 
 # Define your email to use with NCBI Entrez
-Entrez.email = "gk3719695@gmai.com"
+Entrez.email = "place your mail id here"
 
 
 def search_pubmed(keyword):
@@ -49,24 +49,6 @@ def perform_search_and_fetch(keyword):
 
 
 # Example usage: Performing two searches
-keyword1 = """ bioenrgy biofuels tredns 2025 sustanblity reseach"""
-
-# Fetch articles for both keywords
-articles1 = perform_search_and_fetch(keyword1)
-
-print(articles1)
-# Convert both lists of articles to DataFrames
-#df1 = pd.DataFrame(articles1)
+keyword = """ bioenrgy biofuels tredns 2025 sustanblity reseach"""
 
 
-# Add a column to differentiate the search terms in the final DataFrame
-#df1['SearchTerm'] = keyword1
-
-
-# Concatenate the DataFrames
-
-# Save the combined DataFrame to an Excel file
-#excel_filename = keyword1 + "_pubmed_search_results.xlsx"
-#df1.to_excel(excel_filename, index=False)
-
-#print(f"Saved combined search results to {excel_filename}")
